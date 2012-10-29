@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+	<script type="text/javascript" src="/javascripts/lib/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="/javascripts/lib/util.js"></script>
+	<script type="text/javascript" src="/javascripts/client.js"></script>
+	<script type="text/javascript" src="/javascripts/map.js"></script>
+	<script type="text/javascript" src="/javascripts/gameObject.js"></script>
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript">
+	    <!--
+	        var Config = {<%= config %>};
+	    -->
+	</script>
+	<script type="text/javascript" src="/javascripts/mainSmartPhone.js"></script>
+    <meta name="viewport" content="width=device-width, height=device-height, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel='stylesheet' href='/stylesheets/indexSmartPhone.css' />
+  </head>
+  <body>
+    <canvas id="main-canvas" width="400" height="400"></canvas>
+    <div class="button">
+    	<ul>
+	    <li><input id="retry_button" class="retry" type="button" value="retry" style="position:relative;" /></li>
+	    <li><input id="sos_button" class="sos" type="button" value="SOS" style="position:relative;" /></li>
+	    <li><input id="shoot_button" class="shoot" type="button" value="shoot" style="position:relative;" /></li>
+	    </ul>
+    </div>
+  </body>
+</html>

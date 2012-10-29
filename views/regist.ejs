@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>新規登録</title>
+    <link rel='stylesheet' href='/stylesheets/regist.css' />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+  <section>
+  	<h3>
+		<div id='cssmenu'>
+			<ul>
+				<li><a href='/lobby'><span>J-hum3</span></a></li>
+			</ul>
+		</div>
+	</h3>
+	<h2 class="left-only">新規登録</h2>
+	<div style="vertical-align: middle;">
+	<article>
+		<p id="info"><%= info %></p>
+		<form method="post" action="./regist/new">
+			<h4>ID (半角4〜15文字)</h4>
+			<input type="text" name="userID" pattern="^[0-9A-Za-z]{4,15}$"  class="text" required><br>
+			<h4>パスワード (半角4〜15文字)</h4>
+			<input type="password" name="password" pattern="^[0-9A-Za-z]{4,15}$" class="text" required><br>
+			<center>
+			<input type="submit" value="新規登録">
+			</center>
+		</form>
+	</div>
+	</articl>
+	</section>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+	<script type="text/javascript" src="/javascripts/lib/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="/javascripts/lib/util.js"></script>
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script src="/javascripts/lobbySmartPhone.js"></script>
+	<link rel='stylesheet' href='/stylesheets/lobby.css' />
+  </head>
+  <body>
+  <section>
+  		<h3>
+		<div id='cssmenu'>
+			<ul>
+			<li><a href='/lobby'><span>J-hum3</span></a></li>
+			<li><a href='/user/logout'><span>Logout</span></a></li>
+			</ul>
+		</div>
+		</h3>
+    	<div id="page-wrap">
+			<h2 class="right-only">操作方法</h2>
+			<h4>PC版</h4>
+			<p>上下左右の移動：上下左右キー（斜め移動可）<br>攻撃：スペースキー<br>zキー：SOSの発信（HPが0になってから1分間有効）<br>xキー：リトライ<br>#テキストボックスに文章を打つ事でチャットをすることも可能です．</p>
+			<h4>スマートフォン版</h4>
+			<p>上下左右の移動：画面の上下左右をタッチ（斜め移動不可）<br>攻撃：Shootボタン<br>SOSボタン：SOSの発信（HPが0になってから1分間有効）<br>リトライボタン：リトライ</p>
+			<h2 class="left-only">Quest Mode</h2>
+			<p>QuestModeでは，他のプレイヤーと協力しながら地下奥深くを目指します．毎回新しい階層になる毎にマップはランダムに自動生成されます．にHPが0になってしまったら地下1階まで戻されてしまいますが，1分以内に他のプレイヤーが触れることでHPを回復してもらうことができます．助けたプレイヤーは，報酬としてひまわりの種をもらうことができます．潜った階層と取得したひまわりの種はユーザー毎にデータベースに記録され，ランキングとして発表されます．<p>
+			<div align="center"> <input id="quest_button" class="quest" type="button" value="Start Quest Mode" onClick="location.href='./game/quest'"/> </div>
+			</p>
+			<h2 class="right-only">Battle Mode</h2>
+			<p>BattleModeでは，階層の概念が存在しない単一階層のマップでバトルをします．全員が敵のバトルロワイヤル形式でSOSのシステムはなく，HPが0になってもすぐに復活します．5分間戦って倒した敵の数と倒された回数の差が一番大きい人が勝者となります．<br>
+			<div align="center"> <input id="battle_button" class="battle" type="button" value="Start Battle Mode" onClick="location.href='./game/battle'"/> </div>
+			</p>
+		</div>	
+	</section>
+  </body>
+</html>
