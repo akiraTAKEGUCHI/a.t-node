@@ -32,17 +32,17 @@
   	<div id="main">
   	    <div id="gameArea">
         	<canvas id="main-canvas" width="500" height="500" style="background-color: black;" tabindex='1' ></canvas>
-	    </div>
     	    <!--画面右のチャットメッセージ表示エリア-->
     	    <div id="rightArea">
         	    <span class='staticInfo'>ステージ情報</span>
-			    <div id="logArea"></div>
+			    <div id="logArea">
+			    </div>
     	    </div>
+    	</div>
     	<!--画面下部のチャットメッセージ入力エリア-->
-    	    <div id="chatArea">
-	        <textarea id="chatInputBox" ></textarea>
-		<input type="button" id="chatPostButton" value="投稿" class="button"></input>
-	    </div>
+    	<div id="chatArea"><textarea id="chatInputBox" ></textarea>
+			<input type="button" id="chatPostButton" value="投稿" class="button"></input>
+		</div>
 	</div>
   </div>
   </body>

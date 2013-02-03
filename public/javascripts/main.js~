@@ -245,14 +245,6 @@ $(function() {
         }
         return true;
     });
-    
-    $("#chatPostButton").click(function(){
-        var message = $("#chatInputBox").attr('value').replace('\n', '').replace('\r', '');
-        if (message && message.length > 0) {
-           sendChatMessage(message);
-           $("#chatInputBox").attr('value', '');
-        }
-    })
 
     $("#chatInputBox").bind("keydown", function(e) {
         var code = (e.keyCode ? e.keyCode : e.which);
