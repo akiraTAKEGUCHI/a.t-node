@@ -280,12 +280,12 @@
             if (my.state === 1) {
                 console.log('set SOS');
                 my.state = 2;
-                return true;
+                return true;		
             }
             else {
                 console.error('player is not preDead');
                 return false;
-            }
+            }	     
         };
         that.setGameEnd = function() {
             if (my.state === 1 || my.state === 2) {

@@ -141,7 +141,9 @@ module.exports = function(app) {
 
             MyApp.stageList.onKeyDown({
                 userID : socket.handshake.userID,
-                code : code
+			code : code,
+			io : game
+			
             });
         });
         socket.on('disconnect', function() {

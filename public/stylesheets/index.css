@@ -40,7 +40,7 @@ div#main {
 
 div#logArea {
 	width: 65%;
-    height 80%;
+    height: 80%;
 	float: left;
 	overflow: scroll;
 	overflow-y: scroll;
@@ -118,10 +118,8 @@ h3 {
 	border-radius: 1em;
 	font: normal .8em/1.5em Arial, Helvetica, sans-serif;
 	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
 	border-radius: 5px;
-	-webkit-box-shadow: 0 1px 3px rgba(0,0,0, .4);
-	-moz-box-shadow: 0 1px 3px rgba(0,0,0, .4);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0, .4);	
 }
 #cssmenu li {
 	margin: 0 5px;
